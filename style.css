@@ -1,7 +1,56 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+:root {
+    --primary-color: #fff;
+    --secodary-color: #333;
+    --main-color: #663399;
+}
+
+
+.header {
+
+    height: 100dvh;
+    background: url(sharad-kachhi-hluitBPPJBI-unsplash.jpg) center;
+}
+
+.header .navbar {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+
+}
+
+.header .navbar img {
+    width: 100px;
+}
+
+.header .navbar a {
+    color: var(--main-color);
+}
+
+.header .name {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    margin: 250px;
+
+    align-items: end;
+
 }
 
 h1 {
-    color: blueviolet;
+    color: var(--main-color);
+    font-size: 5rem;
+
 }
