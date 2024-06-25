@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Linkedin from "../components/icons/Linkedin.astro";
+import Social from "../components/Social.astro";
+import Github from "../components/icons/Github.astro";
+import GmailIcon from "../components/icons/GmailIcon.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import BriefCase from "../components/icons/BriefCase.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
+import Projects from "../components/Projects.astro";
+import MeIcon from "../components/icons/MeIcon.astro";
+import About from "../components/About.astro";
+---
+
+<Layout
+	title="Portfolio de Tamara Fernandez - Desarrolladora y Programadora Web"
+	description="Contrata a Tamara Fernandez para crear tus websites o aplicaciones web. Desarrolladora y Programadora Web. Especializada en hacer páginas Web y aplicaciones Web Únicas."
+>
+	<main class="px-4">
+		<SectionContainer class="py-40 pb-22"
+		><div
+					class="mb-12 rounded-full overflow-hidden w-96 h-96 mx-auto object-cover"
+				>
+					<img
+						src="/src/components/images/Avatar-purple.png"
+						alt="dibujo de una mujer de pelo morado y ojos morados creado por mi"
+					/>
+				</div>
+				<div class="flex items-center flex-row gap-x-4 pb-6 lg:pb-10">
+				
+				<div>
+					<h1 class="text-3xl md:text-4xl lg:text-5xl font-bolt">
+						Hola, Soy <span class="text-purple-400 font-bold"
+							>Tamara
+						</span>
+					</h1>
+				</div>
+				<a href="https://www.linkedin.com/in/tamara-fernandez-viturro/">
+					<Badge>Disponible para empleo</Badge></a
+				>
+			</div>
+
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+				Desarrolladora Web Full Stack, Artista y apasionada por el
+				Diseño Web. <span class="text-pink-200/90"
+					>De Palma de Mallorca, España.</span
+				> Especializada en hacer páginas Web Únicas.
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<Social
+					href="https://www.linkedin.com/in/tamara-fernandez-viturro/"
+				>
+					<Linkedin class="size-6 lg:size-6" />LinkedIn
+				</Social>
+				<Social href="https://github.com/TamaraFdez">
+					<Github class="size-6 lg:size-6" />Github
+				</Social>
+				<Social href="mailto:TamaraFdezOSMI23@gmail.com">
+					<GmailIcon class="size-6 lg:size-6" />Email
+				</Social>
+			</nav>
+		</SectionContainer>
+		<SectionContainer id="studies">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefCase class="size-7" /> Estudios
+			</h2>
+
+			<Experience />
+		</SectionContainer>
+		<SectionContainer id="project">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7" /> Proyectos
+			</h2>
+
+			<Projects />
+		</SectionContainer>
+		<SectionContainer id="about">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<MeIcon class="size-7" /> Sobre mi
+			</h2>
+			<About />
+		</SectionContainer>
+	</main>
+</Layout>
